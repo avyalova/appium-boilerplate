@@ -68,6 +68,7 @@ export const config: WebdriverIO.Config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
+    path: "/wd/hub",
     baseUrl: "http://the-internet.herokuapp.com",
     // Default timeout for all waitFor* commands.
     /**
@@ -90,7 +91,7 @@ export const config: WebdriverIO.Config = {
     // - wdio.shared.local.appium.conf.ts
     // - wdio.shared.sauce.conf.ts
     // configuration files
-    services: [],
+    services: ["appium"],
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks
