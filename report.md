@@ -51,6 +51,8 @@ Spec 5
 
 ✓ should be able login successfully
 ✓ should be able sign up successfully
+✓ should not login successfully
+✓ should not be able to sign up
 
 2 passing (17.1s)
 
